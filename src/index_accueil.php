@@ -68,6 +68,15 @@
     </thead>
 
 <!--    article 1-->
+    <?php
+        include "database/connection.php";
+        $objPdo = connect();
+        $result = $objPdo->query('select titrenews, datenews, textenews from news');
+        foreach ($result as $row ) {
+            echo $row ['titrenews'] . " - " . $row ['datenews'] . " - " . $row ['textenews'] . "<br />";
+        }
+    ?>
+
     <tr>
         <td rowspan="2" class="imgTable">
             <!--main picture for the article-->

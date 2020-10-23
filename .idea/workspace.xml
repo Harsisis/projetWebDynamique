@@ -23,11 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="html part is nearly done, now we need to move on php and js part">
-      <change afterPath="$PROJECT_DIR$/src/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index_accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index_accueil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -97,6 +99,7 @@
       <workItem from="1603291807681" duration="2776000" />
       <workItem from="1603294615183" duration="3740000" />
       <workItem from="1603445282601" duration="6000" />
+      <workItem from="1603445481905" duration="1008000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1603108019153</created>
@@ -155,10 +158,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="187" key="#Servers/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603295629758" />
-    <state x="414" y="175" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603296575914">
+    <state x="414" y="175" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603445734197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603296575914" />
+    <state x="414" y="175" width="1092" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603445734197" />
     <state x="740" y="310" key="FileChooserDialogImpl" timestamp="1603295806118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -239,10 +242,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="844" height="98" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603113558330" />
-    <state x="347" y="339" key="NewPhpFileDialog" timestamp="1603109599155">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="434" y="428" key="NewPhpFileDialog" timestamp="1603445832798">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="339" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603109599155" />
+    <state x="434" y="428" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603445832798" />
     <state x="346" y="72" key="SettingsEditor" timestamp="1603295170407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
