@@ -62,10 +62,18 @@
 
 <table align="center">
     <thead align="center">
-    <td colspan="2">
+    <td>
         <h2>Les articles du plus récent au plus ancien</h2>
     </td>
     </thead>
+    <tr align="center">
+        <td>
+            <form method="post">
+                <input type="submit" name="theme" value="Thème">
+                <input type="submit" name="date" value="Date">
+            </form>
+        </td>
+    </tr>
     <?php
 
     try {

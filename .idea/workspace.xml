@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="html part is nearly done, now we need to move on php and js part">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection.php" afterDir="false" />
+    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="display all the articles ordered by date">
       <change beforePath="$PROJECT_DIR$/src/index_accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index_accueil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +97,7 @@
       <workItem from="1603294615183" duration="3740000" />
       <workItem from="1603445282601" duration="6000" />
       <workItem from="1603445481905" duration="1008000" />
-      <workItem from="1603453304182" duration="4005000" />
+      <workItem from="1603453304182" duration="4861000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1603108019153</created>
@@ -116,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603296699119</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="display all the articles ordered by date">
+      <created>1603460477285</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603460477285</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +142,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added files" />
     <MESSAGE value="html part is nearly done, now we need to move on php and js part" />
-    <option name="LAST_COMMIT_MESSAGE" value="html part is nearly done, now we need to move on php and js part" />
+    <MESSAGE value="display all the articles ordered by date" />
+    <option name="LAST_COMMIT_MESSAGE" value="display all the articles ordered by date" />
   </component>
   <component name="WindowStateProjectService">
     <state x="116" y="88" key="#CLI_Interpreters" timestamp="1603295581474">
@@ -253,11 +258,11 @@
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603111545176" />
     <state x="346" y="72" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603295170407" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1603296836580">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1603460481874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603108024020" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603296836580" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603460481874" />
     <state x="785" y="422" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1603295810357">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
