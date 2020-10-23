@@ -23,10 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="html part is nearly done, now we need to move on php and js part">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index_accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index_accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index_accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index_accueil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +100,7 @@
       <workItem from="1603294615183" duration="3740000" />
       <workItem from="1603445282601" duration="6000" />
       <workItem from="1603445481905" duration="1008000" />
+      <workItem from="1603453304182" duration="4005000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1603108019153</created>

@@ -113,27 +113,20 @@ header{
 
 /*articles table*/
 table{
-    width: 50%;
-}
-
-a {
-    text-decoration: none;
-    color: #b95122;
-}
-a:hover{
-    color: rgb(103, 135, 148);
-}
-
-.imgTable{
-    border-left: #037E8C 10px solid;
-    width: 70%;
+    width: 80%;
 }
 
 .separator{
     content: "";
-    height: 2em;
 }
 
+td p.date{
+    font-size: smaller;
+}
+
+table tr:not(separator) {
+    border-left: #037E8C 5px solid;
+}
 
 /*footer*/
 
