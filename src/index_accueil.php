@@ -9,23 +9,22 @@
 
 <header>
     <div class="row">
-        <!--        <img class="icon" src="images/logo.png">-->
-        <h1>Titre site</h1>
+        <h1>Hiquéat ⚡</h1>
     </div>
     <div class="row">
         <nav>
             <ul>
                 <li>
-                    <a href="">bouton1</a>
+                    <a class="menuB" href="">bouton1</a>
                 </li>
                 <li>
-                    <a href="">bouton2</a>
+                    <a class="menuB" href="">bouton2</a>
                 </li>
                 <li>
-                    <a href="">bouton3</a>
+                    <a class="menuB" href="">bouton3</a>
                 </li>
                 <li>
-                    <a href="">bouton4</a>
+                    <a class="menuB" href="">bouton4</a>
                 </li>
             </ul>
         </nav>
@@ -67,8 +66,8 @@
     <tr align="center">
         <td>
             <form method="post">
-                <input type="submit" name="theme" value="Thème">
-                <input type="submit" name="date" value="Date">
+                <input class="submitB" type="submit" name="theme" value="Thème">
+                <input class="submitB" type="submit" name="date" value="Date">
             </form>
         </td>
     </tr>
@@ -80,13 +79,16 @@
         die($exception->getMessage());
     }
 
+    $objPdo->query('SET NAMES utf8');
+
     if (isset($_POST["date"])){
-        $objPdo->query('SET NAMES utf8');
         $result = $objPdo->query("select * from news order by datenews desc");
     }
     elseif (isset($_POST["theme"])){
-        $objPdo->query('SET NAMES utf8');
         $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by theme.description");
+    }
+    else{
+        $result = $objPdo->query("select * from news");
     }
 
         foreach ($result as $row ) {
@@ -111,82 +113,9 @@
 
 <br/>
 <!--footer-->
-<div class="footer">
-    <article class="bottom left">
-        <h3>Projet</h3>
-        <ul>
-            <a class="foot" href="Projet_mangas_accueil.html">
-                <li class="foot">
-                    Accueil Mangas
-                </li>
-            </a>
-            <a class="foot" href="Projet_jeuxvideos_accueil.html">
-                <li class="foot">
-                    Accueil Jeux Vidéos
-                </li>
-            </a>
-            <a class="foot" href="Projet_musique_accueil.html">
-                <li class="foot">
-                    Accueil Musiques
-                </li>
-            </a>
-            <a class="foot" href="Projet_sport_accueil.html">
-                <li class="foot">
-                    Accueil Sport
-                </li>
-            </a>
-        </ul>
-    </article>
-    <article class="bottom middle">
-        <h3>Contact</h3>
-        <ul>
-            <a class="foot" href="Projet_mangas_accueil.html">
-                <li class="foot">
-                    Accueil Mangas
-                </li>
-            </a>
-            <a class="foot" href="Projet_jeuxvideos_accueil.html">
-                <li class="foot">
-                    Accueil Jeux Vidéos
-                </li>
-            </a>
-            <a class="foot" href="Projet_musique_accueil.html">
-                <li class="foot">
-                    Accueil Musiques
-                </li>
-            </a>
-            <a class="foot" href="Projet_sport_accueil.html">
-                <li class="foot">
-                    Accueil Sport
-                </li>
-            </a>
-        </ul>
-    </article>
-    <article class="bottom right">
-        <h3>Autres</h3>
-        <ul>
-            <a class="foot" href="Projet_mangas_accueil.html">
-                <li class="foot">
-                    Accueil Mangas
-                </li>
-            </a>
-            <a class="foot" href="Projet_jeuxvideos_accueil.html">
-                <li class="foot">
-                    Accueil Jeux Vidéos
-                </li>
-            </a>
-            <a class="foot" href="Projet_musique_accueil.html">
-                <li class="foot">
-                    Accueil Musiques
-                </li>
-            </a>
-            <a class="foot" href="Projet_sport_accueil.html">
-                <li class="foot">
-                    Accueil Sport
-                </li>
-            </a>
-        </ul>
-    </article>
-</div>
+<footer>
+    </br>
+    <h4>&copy; 2020, HOUVER SING Irma & CADET Gauthier</h4>
+</footer>
 </body>
 </html>

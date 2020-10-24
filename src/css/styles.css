@@ -5,7 +5,7 @@ body{
 }
 
 /*font family*/
-h1, h2, h3, a, p{
+h1, h2, h3, h4, a, p{
 font-family: "Poppins", sans-serif;
 }
 
@@ -33,12 +33,16 @@ nav ul li a {
     padding:10px;
     margin-bottom: 10px;
 }
-nav ul li a:hover {
+nav ul li a.menuB:hover {
     color:#F5CB5C;
     border-bottom: #F5CB5C 2px solid;
     padding-top:5px;
 }
 
+nav ul li a:hover{
+    color:#F5CB5C;
+    padding-top:5px;
+}
 
 /*div -> row*/
 .row:after {
@@ -54,29 +58,29 @@ nav ul li a:hover {
 .right{
     float: right;
 }
+
 /*header*/
 header{
     background-color: #333533;
     padding: 0.5em;
 }
 
-
 /*slideshow*/
 #slideshow {
     overflow: hidden;
-    height: 510px;
+    height: 250px;
     width: 728px;
     margin: 0 auto;
 }
 
 .slide-wrapper {
     width: 2912px;
-    -webkit-animation: slide 18s ease infinite;
+    -webkit-animation: slide 15s ease infinite;
 }
 
 .slide {
     float: left;
-    height: 510px;
+    height: 250px;
     width: 728px;
 }
 
@@ -91,7 +95,6 @@ header{
 .slide:nth-child(3) {
     background: #F5CB5C;
 }
-
 
 .slide-title {
     color: #000;
@@ -109,12 +112,15 @@ header{
     70% {margin-left: -1456px;}
 }
 
-
 /*articles table*/
-input{
+.submitB {
     background-color: #F5CB5C;
     height: 40px;
     width: 120px;
+}
+
+.submitB:hover{
+    background-color: #F0B719;
 }
 
 table{
@@ -135,7 +141,7 @@ table tr:not(separator) {
 
 /*footer*/
 
-.footer{
+footer{
     width: 100%;
     background-color: #3a3a3a;
     margin: 0;
@@ -143,25 +149,7 @@ table tr:not(separator) {
     text-align: center;
 }
 
-.foot {
-    text-align: left;
-    text-decoration: none;
-    color: rgb(103, 135, 148);
+h4{
+    color: #CFDBD5;
+    font-size: smaller;
 }
-
-.foot:hover {
-    color: #D3D3D3;
-}
-
-.bottom {
-    margin: 5% auto 0 auto;
-    width: 25%;
-    color: lightgrey;
-    display: inline-block;
-}
-
-.middle {
-    border-left: 3px solid white;
-    border-right: 3px solid white;
-}
-
