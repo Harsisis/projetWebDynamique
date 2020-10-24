@@ -49,11 +49,9 @@
 <!--slideshow to see the latest news-->
 <div id="slideshow">
     <div class="slide-wrapper">
-        <div class="slide"><h2 class="slide-title">news1</h2></div>
-        <div class="slide"><h1 class="slide-title">news2</h1></div>
-        <div class="slide"><h1 class="slide-title">news3</h1></div>
-        <div class="slide"><h1 class="slide-title">news4</h1></div>
-        <div class="slide"><h1 class="slide-title">news5</h1></div>
+        <div class="slide"><h2 class="slide-title">Cadet Gauthier</h2></div>
+        <div class="slide"><h1 class="slide-title">Houver Sing Irma</h1></div>
+        <div class="slide"><h1 class="slide-title">Projet PHP</h1></div>
     </div>
 </div>
 <br/>
@@ -75,15 +73,22 @@
         </td>
     </tr>
     <?php
-
     try {
         $objPdo = new PDO ('mysql:host=devbdd.iutmetz.univ-lorraine.fr;port=3306;dbname=cadet25u_projetPHP', 'cadet25u_appli', 'Gauthier541609' );
     }
     catch( Exception $exception ) {
         die($exception->getMessage());
     }
+
+    if (isset($_POST["date"])){
         $objPdo->query('SET NAMES utf8');
-        $result = $objPdo->query("select * from news order by datenews");
+        $result = $objPdo->query("select * from news order by datenews desc");
+    }
+    elseif (isset($_POST["theme"])){
+        $objPdo->query('SET NAMES utf8');
+        $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by theme.description");
+    }
+
         foreach ($result as $row ) {
             echo "<tr>
                     <td>

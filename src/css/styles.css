@@ -10,6 +10,10 @@ font-family: "Poppins", sans-serif;
 }
 
 /*buttons for header*/
+h1{
+    color:#F5CB5C;
+}
+
 nav ul {
     padding:0;
     margin:0;
@@ -23,15 +27,15 @@ nav li {
 nav ul li a {
     display:inline-block;
     width:100px;
-    color:black;
+    color: #E8EDDF;
     text-decoration:none;
     text-align:center;
     padding:10px;
     margin-bottom: 10px;
 }
 nav ul li a:hover {
-    color:#D3D3D3;
-    border-bottom: #D3D3D3 2px solid;
+    color:#F5CB5C;
+    border-bottom: #F5CB5C 2px solid;
     padding-top:5px;
 }
 
@@ -52,7 +56,7 @@ nav ul li a:hover {
 }
 /*header*/
 header{
-    background-color: rgb(103, 135, 148);
+    background-color: #333533;
     padding: 0.5em;
 }
 
@@ -77,20 +81,17 @@ header{
 }
 
 .slide:nth-child(1) {
-    background: #D93B65;
+    background: #F5CB5C;
 }
 
 .slide:nth-child(2) {
-    background: #037E8C;
+    background: #CFDBD5;
 }
 
 .slide:nth-child(3) {
-    background: #36BF66;
+    background: #F5CB5C;
 }
 
-.slide:nth-child(4) {
-    background: #D9D055;
-}
 
 .slide-title {
     color: #000;
@@ -106,12 +107,16 @@ header{
     50% {margin-left: -728px;}
     60% {margin-left: -1456px;}
     70% {margin-left: -1456px;}
-    80% {margin-left: -2184px;}
-    90% {margin-left: -2184px;}
 }
 
 
 /*articles table*/
+input{
+    background-color: #F5CB5C;
+    height: 40px;
+    width: 120px;
+}
+
 table{
     width: 80%;
 }
