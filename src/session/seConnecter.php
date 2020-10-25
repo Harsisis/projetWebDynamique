@@ -1,19 +1,28 @@
 <?php
 session_start();
+include("../database/connection.php");
+$objPdo = connect();
     if (isset($_POST["valider"])){
-            if (!$_POST['nu'] == '' && !$_POST['mdp'] == '') {
-                $_SESSION['login'] = $_POST['nu'];
-                $_SESSION['password'] = $_POST['mdp'];
-                header("Location:sessiontest.php");
+            if ($_POST['mail'] != '' && $_POST['mdp'] != '') {
+                $recordMail = $_POST['mail'];
+                $recordMdp = $_POST['mdp'];
+                $result = $objPdo->query("select * from redacteur where motdepasse = '$recordMdp' and adressemail = '$recordMail'");
+                foreach ($result as $row ) {
+                    echo $row['adressemail'];
+                }
+                if (!empty($result)){
+                    $_SESSION['login'] = $recordMail;
+                    $_SESSION['password'] = $recordMdp;
+                    header("Location:sessiontest.php");
+                }
             }
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/signIn.css">
+    <link rel="stylesheet" type="text/css" href="../css/signIn.css">
     <title>Se Connecter</title>
 </head>
 <body>
@@ -25,7 +34,7 @@ session_start();
             <table>
                 <tr>
                     <td align="center">
-                        <input type="text" name="nu" value="nom d'utilisateur" onfocus=this.value=''>
+                        <input type="text" name="mail" value="mail" onfocus=this.value=''>
                     </td>
                 </tr>
                 <tr>

@@ -1,5 +1,8 @@
 <?php
 include("database/connection.php");
+
+session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -33,22 +36,44 @@ include("database/connection.php");
             </ul>
         </nav>
     </div>
-    <div class="row right">
+    <?php
+    if (!isset($_SESSION['login']) || !isset($_SESSION['password'])) {
+        echo "<div class=\"row right\">
         <nav>
             <ul>
                 <li>
-                    <a href="seConnecter.php">Sign in</a>
+                    <a href=\"session/seConnecter.php\">Sign in</a>
                 </li>
                 <li>
-                    <a href="seConnecter.php">Sign up</a>
+                    <a href=\"session/seConnecter.php\">Sign up</a>
                 </li>
             </ul>
         </nav>
-    </div>
+    </div>";
+    }
+    else{
+        echo "<div class=\"row right\">
+        <nav>
+            <ul>
+                <li>
+                    <a href=\"session/seDeconnecter.php\">Sign out</a>
+                </li>
+            </ul>
+        </nav>
+    </div>";
+    }
+    ?>
+
 </header>
 
 <br/>
-
+<p align="center">
+    <?php
+    if (isset($_SESSION['login']) || isset($_SESSION['password'])) {
+        echo "Bienvenue " . $_SESSION['login'] . " !";
+    }
+    ?>
+</p>
 <!--slideshow to see the latest news-->
 <div id="slideshow">
     <div class="slide-wrapper">

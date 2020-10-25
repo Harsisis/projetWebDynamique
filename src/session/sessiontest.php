@@ -15,10 +15,11 @@ if (!isset($_SESSION['login']) || !isset($_SESSION['password'])) {
     <title>Titre de ma page</title>
 </head>
 <body>
-<p>Re-bonjour !</p>
 <p>
     nom utilisateur <?php echo $_SESSION['login']; ?> <br />
     mot de passe <?php echo $_SESSION['password']; ?>
 </p>
+
+<a href="../index_accueil.php">accueil</a>
 </body>
 </html>
