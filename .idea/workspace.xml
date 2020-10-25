@@ -22,10 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="order by theme and date">
-      <change afterPath="$PROJECT_DIR$/src/sessiontest.php" afterDir="false" />
+    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="added form for sorted by theme or date">
+      <change afterPath="$PROJECT_DIR$/src/css/signIn.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index_accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index_accueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/seConnecter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/seConnecter.php" afterDir="false" />
     </list>
@@ -36,6 +37,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,6 +69,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="coverage" />
     <property name="vue.rearranger.settings.migration" value="true" />

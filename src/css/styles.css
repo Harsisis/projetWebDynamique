@@ -27,7 +27,7 @@ nav li {
 nav ul li a {
     display:inline-block;
     width:100px;
-    color: #E8EDDF;
+    color: #F6F8F2;
     text-decoration:none;
     text-align:center;
     padding:10px;
@@ -135,10 +135,6 @@ td p.date{
     font-size: smaller;
 }
 
-table tr:not(separator) {
-    border-left: #037E8C 5px solid;
-}
-
 /*footer*/
 
 footer{
@@ -153,3 +149,5 @@ h4{
     color: #CFDBD5;
     font-size: smaller;
 }
+
+

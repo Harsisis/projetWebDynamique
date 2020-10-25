@@ -1,3 +1,7 @@
+<?php
+include("database/connection.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -72,12 +76,7 @@
         </td>
     </tr>
     <?php
-    try {
-        $objPdo = new PDO ('mysql:host=devbdd.iutmetz.univ-lorraine.fr;port=3306;dbname=cadet25u_projetPHP', 'cadet25u_appli', 'Gauthier541609' );
-    }
-    catch( Exception $exception ) {
-        die($exception->getMessage());
-    }
+    $objPdo = connect();
 
     $objPdo->query('SET NAMES utf8');
 
