@@ -27,7 +27,7 @@ session_start();
                             <a class=\"menuB\" href=\"\">écrire un article</a>
                             </li>
                             <li>
-                            <a class=\"menuB\" href=\"\">ajouter un thème</a>
+                            <a class=\"menuB\" href=\"ajouter/addTheme.php\">ajouter un thème</a>
                             </li>";
                 }
                 ?>
@@ -98,13 +98,13 @@ session_start();
     $objPdo->query('SET NAMES utf8');
 
     if (isset($_POST["date"])){
-        $result = $objPdo->query("select * from news order by datenews desc");
+        $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by datenews desc");
     }
     elseif (isset($_POST["theme"])){
         $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by theme.description");
     }
     else{
-        $result = $objPdo->query("select * from news");
+        $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by datenews desc");
     }
 
     foreach ($result as $row ) {
@@ -116,7 +116,7 @@ session_start();
 
         echo "<tr>
                     <td>
-                        <p class='date'>" . $row ['datenews'] . "</p>
+                        <p class='date'>" . $row ['datenews'] . " - " . $row['description'] . "</p>
                         <p>" . $row ['textenews'] . "</p>
                     </td>
                 </tr>";

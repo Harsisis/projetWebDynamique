@@ -22,10 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="check the trello, problems are the same&#10;BUT there are nice problems">
+    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="update readme plus some fix in css part for accueil and added the sql part for the account creation">
+      <change afterPath="$PROJECT_DIR$/src/addArticle.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/addTheme.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session/creerCompte.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/creerCompte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/accueil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,11 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\prj\src" />
+      <recent name="C:\xampp\htdocs\prj\fichierTestGogo" />
       <recent name="C:\xampp\htdocs\prj\fichierTestYuyu" />
       <recent name="C:\xampp\htdocs\prj" />
       <recent name="C:\xampp\htdocs\prj\src\fichierTestYuyu" />
-      <recent name="C:\xampp\htdocs\prj\src\session" />
-      <recent name="C:\xampp\htdocs\prj\src" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Page.localhost">
@@ -114,7 +115,7 @@
       <workItem from="1603453304182" duration="4861000" />
       <workItem from="1603524554875" duration="7840000" />
       <workItem from="1603714498007" duration="4519000" />
-      <workItem from="1603724011970" duration="2582000" />
+      <workItem from="1603724011970" duration="4876000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1603108019153</created>
@@ -179,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603720857004</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update readme plus some fix in css part for accueil and added the sql part for the account creation">
+      <created>1603734587171</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603734587171</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +216,8 @@
     <MESSAGE value="managed files" />
     <MESSAGE value="create account page is create, we need to create sql request to add row in db&#10;Also it remains to check if the user exist for the connection" />
     <MESSAGE value="check the trello, problems are the same&#10;BUT there are nice problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="check the trello, problems are the same&#10;BUT there are nice problems" />
+    <MESSAGE value="update readme plus some fix in css part for accueil and added the sql part for the account creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme plus some fix in css part for accueil and added the sql part for the account creation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="116" y="88" key="#CLI_Interpreters" timestamp="1603295581474">
@@ -326,21 +335,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1603519415677" />
-    <state x="434" y="428" key="NewPhpFileDialog" timestamp="1603714770521">
+    <state x="434" y="428" key="NewPhpFileDialog" timestamp="1603735337036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="339" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603525054100" />
-    <state x="434" y="428" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603714770521" />
+    <state x="434" y="428" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603735337036" />
     <state x="346" y="72" key="SettingsEditor" timestamp="1603295170407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603111545176" />
     <state x="346" y="72" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603295170407" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1603720858177">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1603734589379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603524052318" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603720858177" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603734589379" />
     <state x="1090" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603733436146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
