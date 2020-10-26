@@ -4,10 +4,13 @@ include("../database/connection.php");
 $objPdo = connect();
 if (isset($_POST["valider"])){
     if ($_POST['mail'] != '' && $_POST['mdp'] != '' && $_POST['nom'] != '' && $_POST['prenom'] != '') {
-        $_SESSION['nom'] = $_POST['nom'];
-        $_SESSION['prenom'] = $_POST['prenom'];
-        $_SESSION['login'] = $_POST['mail'];
-        $_SESSION['password'] = $_POST['mdp'];
+        $nom = $_SESSION['nom'] = strtoupper($_POST['nom']);
+        $prenom =$_SESSION['prenom'] = $_POST['prenom'];
+        $mail = $_SESSION['login'] = $_POST['mail'];
+        $mdp = $_SESSION['password'] = $_POST['mdp'];
+
+        $result = $objPdo->query("insert into redacteur(nom, prenom, adressemail, motdepasse) values ('$nom', '$prenom', '$mail', '$mdp')");
+
         header("Location:../accueil.php");
     }
 }

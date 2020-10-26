@@ -20,6 +20,6 @@ if (!isset($_SESSION['login']) || !isset($_SESSION['password'])) {
     mot de passe <?php echo $_SESSION['password']; ?>
 </p>
 
-<a href="../accueil.php">accueil</a>
+<a href="../src/accueil.php">accueil</a>
 </body>
 </html>
