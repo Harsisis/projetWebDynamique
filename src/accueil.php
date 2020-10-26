@@ -24,7 +24,7 @@ session_start();
                 <?php
                 if (isset($_SESSION['login']) || isset($_SESSION['password'])) {
                     echo "<li>
-                            <a class=\"menuB\" href=\"\">écrire un article</a>
+                            <a class=\"menuB\" href=\"ajouter/addArticle.php\">écrire un article</a>
                             </li>
                             <li>
                             <a class=\"menuB\" href=\"ajouter/addTheme.php\">ajouter un thème</a>
@@ -48,7 +48,8 @@ session_start();
                 }
                 else{
                     echo "<li>
-                    <a href=\"session/seDeconnecter.php\">Sign out</a>
+                    <a href=\"javascript:void(0);\" onclick='deco();'>Sign out</a> <!---->
+                    <script type='text/javascript' src='popupDeco.js'></script>
                 </li>";
                 }
                 ?>

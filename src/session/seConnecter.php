@@ -36,12 +36,12 @@ $objPdo = connect();
             <table>
                 <tr>
                     <td align="center">
-                        <input type="text" name="mail" value="mail" onfocus=this.value=''>
+                        <input type="text" name="mail" placeholder="mail">
                     </td>
                 </tr>
                 <tr>
                     <td align="center">
-                        <input type="password" name="mdp" onfocus=this.value=''>
+                        <input type="password" name="mdp" placeholder="mot de passe">
                     </td>
                 </tr>
                 <tr>

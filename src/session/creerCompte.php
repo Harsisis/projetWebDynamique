@@ -31,22 +31,22 @@ if (isset($_POST["valider"])){
             <table>
                 <tr>
                     <td align="center">
-                        <input type="text" name="nom" value="nom" onfocus=this.value=''>
+                        <input type="text" name="nom" placeholder="nom">
                     </td>
                 </tr>
                 <tr>
                     <td align="center">
-                        <input type="text" name="prenom" value="prénom" onfocus=this.value=''>
+                        <input type="text" name="prenom" placeholder="prénom">
                     </td>
                 </tr>
                 <tr>
                     <td align="center">
-                        <input type="text" name="mail" value="mail" onfocus=this.value=''>
+                        <input type="text" name="mail" placeholder="mail">
                     </td>
                 </tr>
                 <tr>
                     <td align="center">
-                        <input type="password" name="mdp" value="mot de passe" onfocus=this.value=''>
+                        <input type="password" name="mdp" placeholder="mot de passe">
                     </td>
                 </tr>
                 <tr>

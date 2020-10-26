@@ -14,7 +14,7 @@ if (isset($_POST["valider"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/addtheme.css">
+    <link rel="stylesheet" type="text/css" href="../css/addTheme.css">
     <title>Ajouter un thème</title>
 </head>
 <body>
@@ -26,7 +26,7 @@ if (isset($_POST["valider"])){
             <table>
                 <tr>
                     <td align="center">
-                        <input type="text" name="theme" value="nom du thème" onfocus=this.value=''>
+                        <input type="text" name="theme" placeholder="nom du thème">
                     </td>
                 </tr>
                 <tr>
@@ -41,3 +41,6 @@ if (isset($_POST["valider"])){
 
 </body>
 </html>
+
+
+
