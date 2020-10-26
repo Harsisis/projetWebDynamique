@@ -22,12 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="a lot of changes, css for seConnecter and i know how to check if the user exist">
-      <change afterPath="$PROJECT_DIR$/src/seDeconnecter.php" afterDir="false" />
+    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="managed files">
+      <change afterPath="$PROJECT_DIR$/src/session/creerCompte.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index_accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index_accueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/seConnecter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/seConnecter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sessiontest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/sessiontest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/sign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index_accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session/seConnecter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/seConnecter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session/seDeconnecter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/seDeconnecter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session/sessiontest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/sessiontest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,10 +77,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\prj\fichierTestYuyu" />
+      <recent name="C:\xampp\htdocs\prj" />
       <recent name="C:\xampp\htdocs\prj\src\fichierTestYuyu" />
       <recent name="C:\xampp\htdocs\prj\src\session" />
       <recent name="C:\xampp\htdocs\prj\src" />
-      <recent name="D:\Bureau\travail\0_PROJETS\projetWebDynamique\src\css" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Page.localhost">
@@ -114,6 +117,7 @@
       <workItem from="1603445481905" duration="1008000" />
       <workItem from="1603453304182" duration="4861000" />
       <workItem from="1603524554875" duration="7840000" />
+      <workItem from="1603714498007" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1603108019153</created>
@@ -150,7 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603660878386</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="we can connect, and disconnect but we need to to check if the user is ok">
+      <created>1603669196182</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603669196182</updated>
+    </task>
+    <task id="LOCAL-00007" summary="managed files">
+      <created>1603669307336</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603669307337</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +193,9 @@
     <MESSAGE value="display all the articles ordered by date" />
     <MESSAGE value="order by theme and date" />
     <MESSAGE value="a lot of changes, css for seConnecter and i know how to check if the user exist" />
-    <option name="LAST_COMMIT_MESSAGE" value="a lot of changes, css for seConnecter and i know how to check if the user exist" />
+    <MESSAGE value="we can connect, and disconnect but we need to to check if the user is ok" />
+    <MESSAGE value="managed files" />
+    <option name="LAST_COMMIT_MESSAGE" value="managed files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="116" y="88" key="#CLI_Interpreters" timestamp="1603295581474">
@@ -293,21 +313,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1603519415677" />
-    <state x="434" y="428" key="NewPhpFileDialog" timestamp="1603668965140">
+    <state x="434" y="428" key="NewPhpFileDialog" timestamp="1603714770521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="339" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603525054100" />
-    <state x="434" y="428" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603668965140" />
+    <state x="434" y="428" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603714770521" />
     <state x="346" y="72" key="SettingsEditor" timestamp="1603295170407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603111545176" />
     <state x="346" y="72" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603295170407" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1603661231995">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1603669313383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603524052318" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603661231995" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603669313383" />
     <state x="785" y="422" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1603295810357">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

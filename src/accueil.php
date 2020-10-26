@@ -16,7 +16,7 @@ session_start();
 
 <header>
     <div class="row">
-        <h1>Hiquéat ⚡</h1>
+        <h1>YuGo News ⚡</h1>
     </div>
     <div class="row">
         <nav>
@@ -45,7 +45,7 @@ session_start();
                     <a href=\"session/seConnecter.php\">Sign in</a>
                 </li>
                 <li>
-                    <a href=\"session/seConnecter.php\">Sign up</a>
+                    <a href=\"session/creerCompte.php\">Sign up</a>
                 </li>
             </ul>
         </nav>
@@ -70,7 +70,7 @@ session_start();
 <p align="center">
     <?php
     if (isset($_SESSION['login']) || isset($_SESSION['password'])) {
-        echo "Bienvenue " . $_SESSION['login'] . " !";
+        echo "Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . " !";
     }
     ?>
 </p>
