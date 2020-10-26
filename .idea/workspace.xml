@@ -22,14 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="managed files">
-      <change afterPath="$PROJECT_DIR$/src/session/creerCompte.php" afterDir="false" />
+    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="create account page is create, we need to create sql request to add row in db&#10;Also it remains to check if the user exist for the connection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/signIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/sign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index_accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/session/seConnecter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/seConnecter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session/seDeconnecter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/seDeconnecter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session/sessiontest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/sessiontest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +114,7 @@
       <workItem from="1603445481905" duration="1008000" />
       <workItem from="1603453304182" duration="4861000" />
       <workItem from="1603524554875" duration="7840000" />
-      <workItem from="1603714498007" duration="1412000" />
+      <workItem from="1603714498007" duration="4411000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1603108019153</created>
@@ -168,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603669307337</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="create account page is create, we need to create sql request to add row in db&#10;Also it remains to check if the user exist for the connection">
+      <created>1603716252283</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603716252283</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +199,8 @@
     <MESSAGE value="a lot of changes, css for seConnecter and i know how to check if the user exist" />
     <MESSAGE value="we can connect, and disconnect but we need to to check if the user is ok" />
     <MESSAGE value="managed files" />
-    <option name="LAST_COMMIT_MESSAGE" value="managed files" />
+    <MESSAGE value="create account page is create, we need to create sql request to add row in db&#10;Also it remains to check if the user exist for the connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="create account page is create, we need to create sql request to add row in db&#10;Also it remains to check if the user exist for the connection" />
   </component>
   <component name="WindowStateProjectService">
     <state x="116" y="88" key="#CLI_Interpreters" timestamp="1603295581474">
@@ -323,11 +328,11 @@
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603111545176" />
     <state x="346" y="72" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603295170407" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1603669313383">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1603716258652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603524052318" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603669313383" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603716258652" />
     <state x="785" y="422" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1603295810357">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -336,5 +341,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="95" width="583" height="849" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603296858013" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603716095221">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603716095221" />
   </component>
 </project>

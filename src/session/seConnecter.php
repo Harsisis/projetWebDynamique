@@ -3,7 +3,7 @@ session_start();
 include("../database/connection.php");
 $objPdo = connect();
     if (isset($_POST["valider"])){
-            if ($_POST['mail'] != '' && $_POST['mdp'] != '') {
+            if ($_POST['mail'] != '' && $_POST['mdp'] != '' && $_POST['mail'] != 'mail') {
                 $recordMail = $_POST['mail'];
                 $recordMdp = $_POST['mdp'];
                 $result = $objPdo->query("select * from redacteur where motdepasse = '$recordMdp' and adressemail = '$recordMail'");
@@ -41,7 +41,7 @@ $objPdo = connect();
                 </tr>
                 <tr>
                     <td align="center">
-                        <input type="password" name="mdp" value="mot de passe" onfocus=this.value=''>
+                        <input type="password" name="mdp" onfocus=this.value=''>
                     </td>
                 </tr>
                 <tr>

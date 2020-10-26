@@ -21,48 +21,40 @@ session_start();
     <div class="row">
         <nav>
             <ul>
-                <li>
-                    <a class="menuB" href="">bouton1</a>
-                </li>
-                <li>
-                    <a class="menuB" href="">bouton2</a>
-                </li>
-                <li>
-                    <a class="menuB" href="">bouton3</a>
-                </li>
-                <li>
-                    <a class="menuB" href="">bouton4</a>
-                </li>
+                <?php
+                if (isset($_SESSION['login']) || isset($_SESSION['password'])) {
+                    echo "<li>
+                            <a class=\"menuB\" href=\"\">écrire un article</a>
+                            </li>
+                            <li>
+                            <a class=\"menuB\" href=\"\">ajouter un thème</a>
+                            </li>";
+                }
+                ?>
             </ul>
         </nav>
     </div>
-    <?php
-    if (!isset($_SESSION['login']) || !isset($_SESSION['password'])) {
-        echo "<div class=\"row right\">
+    <div class="row right">
         <nav>
             <ul>
-                <li>
+                <?php
+                if (!isset($_SESSION['login']) || !isset($_SESSION['password'])) {
+                    echo "<li>
                     <a href=\"session/seConnecter.php\">Sign in</a>
                 </li>
                 <li>
                     <a href=\"session/creerCompte.php\">Sign up</a>
-                </li>
-            </ul>
-        </nav>
-    </div>";
-    }
-    else{
-        echo "<div class=\"row right\">
-        <nav>
-            <ul>
-                <li>
+                </li>";
+                }
+                else{
+                    echo "<li>
                     <a href=\"session/seDeconnecter.php\">Sign out</a>
-                </li>
+                </li>";
+                }
+                ?>
             </ul>
         </nav>
-    </div>";
-    }
-    ?>
+    </div>
 
 </header>
 
@@ -115,14 +107,14 @@ session_start();
         $result = $objPdo->query("select * from news");
     }
 
-        foreach ($result as $row ) {
-            echo "<tr>
+    foreach ($result as $row ) {
+        echo "<tr>
                     <td>
                         <h3>" . $row ['titrenews'] . "</h3>
                     </td>
                 </tr>";
 
-            echo "<tr>
+        echo "<tr>
                     <td>
                         <p class='date'>" . $row ['datenews'] . "</p>
                         <p>" . $row ['textenews'] . "</p>
@@ -130,8 +122,8 @@ session_start();
                 </tr>";
 
 
-            echo "<tr class=\"separator\"></tr>";
-        }
+        echo "<tr class=\"separator\"></tr>";
+    }
     ?>
 </table>
 
