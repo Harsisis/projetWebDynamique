@@ -1,30 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 
 body {
-    background: #dbd1c7;
+    background: linear-gradient(90deg, #CFDBD5 0%, #E8EDDF 100%);
     font-family: "Montserrat", sans-serif;
     margin: 0;
-}
-
-.container-shadow {
-    position: absolute;
-    width: 525px;
-    height: 675px;
-    left: 50%;
-    margin-left: -262.5px;
-    margin-top: 60px;
-    box-shadow: 0px 30px 50px -20px #000;
 }
 
 .container {
     position: absolute;
     width: 525px;
-    height: 675px;
+    height: 600px;
     left: 50%;
     margin-left: -262.5px;
     margin-top: 60px;
-    background: linear-gradient(90deg, #29323c 0%, #3b4249 100%);
-    box-shadow: 0px 0px 50px -20px #000;
+    background: linear-gradient(90deg, #242423 0%, #333533 100%);
 }
 
 .wrap {
@@ -34,18 +23,17 @@ body {
 }
 
 .headings {
-    color: rgba(255, 255, 255, 1);
+    color: #E8EDDF;
     position: relative;
     margin: 90px auto 70px;
-    border-bottom: solid 4px #aaf0d1;
+    border-bottom: solid 4px #f5cb5c;
     padding-bottom: 10px;
-    box-shadow: 0 5px 5px -5px #1d2124;
     font-size: 1.4rem;
     letter-spacing: 1px;
 }
 
 label {
-    color: rgba(255, 255, 255, 0.8);
+    color: #E8EDDF;
     text-transform: uppercase;
     padding: 13px 20px;
     position: relative;
@@ -55,14 +43,14 @@ label {
 
 input {
     width: 100%;
-    color: #fff;
+    color: #E8EDDF;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
     background: transparent;
     padding: 10px 20px;
     border: none;
-    border-bottom: 2px solid #1d2124;
+    border-bottom: 2px solid #E8EDDF;
     outline: none;
     box-sizing: border-box;
 
@@ -71,15 +59,14 @@ input {
 
 input:active,
 input:focus {
-    border-bottom: 0.12em solid #aaf0d1;
-    border-color: #aaf0d1;
-    box-shadow: 0 5px 5px -5px #aaf0d1;
+    border-bottom: 0.12em solid #f5cb5c;
+    border-color: #f5cb5c;
 }
 
 .button {
     width: 100%;
-    background: #aaf0d1;
-    color: #2c353e;
+    background: #f5cb5c;
+    color: #242423;
     text-transform: uppercase;
     margin-top: 1.3em;
     padding: 12px;
@@ -88,6 +75,6 @@ input:focus {
 }
 
 .button:hover {
-    background: #aaf0d1;
-    box-shadow: 0 0 10px #aaf0d1, 0 0 30px #aaf0d1, 0 0 50px #aaf0d1;
+    background: #f5cb5c;
+    box-shadow: 0 0 10px #f5cb5c, 0 0 30px #f5cb5c;
 }
