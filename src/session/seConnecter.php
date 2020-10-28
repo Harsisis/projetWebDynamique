@@ -11,11 +11,15 @@ $objPdo = connect();
                     echo $row['adressemail'];
                     $_SESSION['nom'] = $row['nom'];
                     $_SESSION['prenom'] = $row['prenom'];
+                    $_SESSION['id'] = $row['idredacteur'];
                 }
-                if (!empty($result)){
+                if ($result != null){
                     $_SESSION['login'] = $recordMail;
                     $_SESSION['password'] = $recordMdp;
                     header("Location:../accueil.php");
+                }
+                else{
+                    header("Location:seConnecter.php");
                 }
             }
     }

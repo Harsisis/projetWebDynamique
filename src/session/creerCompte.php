@@ -10,7 +10,10 @@ if (isset($_POST["valider"])){
         $mdp = $_SESSION['password'] = $_POST['mdp'];
 
         $result = $objPdo->query("insert into redacteur(nom, prenom, adressemail, motdepasse) values ('$nom', '$prenom', '$mail', '$mdp')");
-
+        $result = $objPdo->query("select * from redacteur where adressemail = '$mail' and motdepasse = '$mdp'");
+        foreach ($result as $row ) {
+            $_SESSION['id'] = $row['idredacteur'];
+        }
         header("Location:../accueil.php");
     }
 }

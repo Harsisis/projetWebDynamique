@@ -1,10 +1,14 @@
 <?php
 include("../database/connection.php");
+
 $objPdo = connect();
+$objPdo->query('SET NAMES utf8');
+
 if (isset($_POST["valider"])){
-    if ($_POST['theme'] != ""){// check if already exist
+    if ($_POST['titre'] != "" || $_POST['contenu'] != ""){// check if already exist
         $theme = $_POST['theme'];
-        $result = $objPdo->query("insert into theme(description) values ('$theme')");
+        $idTheme = $objPdo->query("select idtheme from theme where description = '$theme'");
+        $result = $objPdo->query("insert into news(idtheme, titrenews, datenews, textenews) values ('$idTheme')");
         header("Location:../accueil.php");
     }
 }
@@ -36,16 +40,15 @@ if (isset($_POST["valider"])){
                 </tr>
                 <tr>
                     <td align="center">
-                        <input type=text list=theme >
-                        <datalist id=browsers >
+                        <select name="theme" id="theme">
                             <?php
                             $result = $objPdo->query("select * from theme");
 
                             foreach ($result as $row ) {
-                                echo "<option>" . $row['description'] . "/</option>";
+                                echo "<option>" . $row['description'] . "</option>";
                             }
                             ?>
-                        </datalist>
+                        </select>
                     </td>
                 </tr>
                 <tr>

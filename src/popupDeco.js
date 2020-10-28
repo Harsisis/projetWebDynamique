@@ -1,5 +1,5 @@
 function deco() {
-    if (confirm("Etes-vous sûr de vouloir vous déconnecter ?")){
+    if (confirm("Êtes-vous sûr de vouloir vous déconnecter ?")){
         location.href = ("session/seDeconnecter.php");
     }
     else{

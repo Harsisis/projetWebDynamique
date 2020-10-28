@@ -2,7 +2,6 @@
 include("database/connection.php");
 
 session_start();
-
 ?>
 
 <!DOCTYPE html>
