@@ -9,11 +9,11 @@ body {
 .container {
     position: absolute;
     width: 525px;
-    height: 600px;
+    height: 750px;
     left: 50%;
     margin-left: -262.5px;
     margin-top: 60px;
-    background: linear-gradient(90deg, #242423 0%, #333533 100%);
+    background: linear-gradient(90deg, #212120 0%, #333533 100%);
 }
 
 .wrap {
@@ -76,5 +76,5 @@ input:focus {
 
 .button:hover {
     background: #f5cb5c;
-    box-shadow: 0 0 10px #f5cb5c, 0 0 30px #f5cb5c;
+    box-shadow: 0 0 2px #f5cb5c, 0 0 5px #f5cb5c;
 }

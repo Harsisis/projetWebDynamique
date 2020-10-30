@@ -14,28 +14,23 @@ if (isset($_POST["valider"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/addTheme.css">
+    <link rel="stylesheet" type="text/css" href="../css/styleTheme.css">
     <title>Ajouter un thème</title>
 </head>
 <body>
-<div align="center">
-    <div id="champs" align="center">
-        <h2>Ajouter un thème</h2>
 
-        <form method="post">
-            <table>
-                <tr>
-                    <td align="center">
-                        <input type="text" name="theme" placeholder="nom du thème">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center"><br/>
-                        <input type="submit" value="Valider" name="valider">
-                    </td>
-                </tr>
-            </table>
-        </form>
+<div class="container">
+    <div class="wrap">
+        <div class="headings">
+            <a id="sign-up"><span>Ajouter un Thème</span></a>
+        </div>
+        <div id="sign-in-form">
+            <form  method="post">
+                <label for="username">Nom</label>
+                <input id="username" type="text" name="theme" />
+                <input type="submit" class="button" name="valider" value="Valider"/>
+            </form>
+        </div>
     </div>
 </div>
 

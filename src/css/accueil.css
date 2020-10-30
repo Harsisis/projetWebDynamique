@@ -1,17 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 
 /*body*/
 body{
+    /*background: linear-gradient(90deg, #CFDBD5 0%, #E8EDDF 100%);*/
+    font-family: "Montserrat", sans-serif;
     margin: 0;
-}
-
-/*font family*/
-h1, h2, h3, h4, a, p{
-font-family: "Poppins", sans-serif;
 }
 
 /*buttons for header*/
 h1{
-    color:#F5CB5C;
+    color: #E8EDDF;
+    position: relative;
+    margin-left: 15px;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
 }
 
 nav ul {
@@ -62,7 +65,7 @@ nav ul li a:hover{
 
 /*header*/
 header{
-    background-color: #333533;
+    background: linear-gradient(90deg, #212120 0%, #333533 100%);
     padding: 0.5em;
 }
 
@@ -114,14 +117,21 @@ header{
 }
 
 /*articles table*/
+
+input{
+    font-family: "Montserrat", sans-serif;
+}
+
 .submitB {
-    background-color: #F5CB5C;
-    height: 40px;
-    width: 120px;
+    color: #F6F8F2;
+    background: linear-gradient(90deg, #212120 0%, #333533 100%);
+    height: 60px;
+    width: 200px;
+    border: none;
 }
 
 .submitB:hover{
-    background-color: #F0B719;
+    box-shadow: 0 0 4px #f5cb5c, 0 0 16px #f5cb5c;
 }
 
 table{
@@ -140,7 +150,7 @@ td p.date{
 
 footer{
     width: 100%;
-    background-color: #3a3a3a;
+    background: linear-gradient(90deg, #212120 0%, #333533 100%);
     margin: 0;
     padding-bottom: 3em;
     text-align: center;

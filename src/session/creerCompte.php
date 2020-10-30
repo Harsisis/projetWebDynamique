@@ -22,43 +22,29 @@ if (isset($_POST["valider"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/signUp.css">
+    <link rel="stylesheet" type="text/css" href="../css/login2.css">
     <title>Créer un compte</title>
 </head>
 <body>
-<div align="center">
-    <div id="champs" align="center">
-        <h2>Créer un compte</h2>
 
-        <form method="post">
-            <table>
-                <tr>
-                    <td align="center">
-                        <input type="text" name="nom" placeholder="nom">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <input type="text" name="prenom" placeholder="prénom">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <input type="text" name="mail" placeholder="mail">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <input type="password" name="mdp" placeholder="mot de passe">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center"><br/>
-                        <input type="submit" value="Valider" name="valider">
-                    </td>
-                </tr>
-            </table>
-        </form>
+<div class="container">
+    <div class="wrap">
+        <div class="headings">
+            <a id="sign-in"><span>Créer un compte</span></a>
+        </div>
+        <div id="sign-in-form">
+            <form  method="post">
+                <label for="name">Nom</label>
+                <input id="nom" type="text" name="nom" />
+                <label for="name">Prénom</label>
+                <input id="nom" type="text" name="prenom" />
+                <label for="username">Mail</label>
+                <input id="username" type="text" name="mail" />
+                <label for="password">Mot de passe</label>
+                <input id="password" type="password" name="mdp" />
+                <input type="submit" class="button" name="valider" value="Valider"/>
+            </form>
+        </div>
     </div>
 </div>
 

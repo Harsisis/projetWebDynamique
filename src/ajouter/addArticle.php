@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("../database/connection.php");
 
 $objPdo = connect();
@@ -7,8 +8,15 @@ $objPdo->query('SET NAMES utf8');
 if (isset($_POST["valider"])){
     if ($_POST['titre'] != "" || $_POST['contenu'] != ""){// check if already exist
         $theme = $_POST['theme'];
-        $idTheme = $objPdo->query("select idtheme from theme where description = '$theme'");
-        $result = $objPdo->query("insert into news(idtheme, titrenews, datenews, textenews) values ('$idTheme')");
+        $titre = $_POST['titre'];
+        $date = date("Y-m-d");;
+        $texte = $_POST['texte'];
+        $redac = $_SESSION['id'];
+        $resTheme = $objPdo->query("select idtheme from theme where description = '$theme'");
+        foreach ($resTheme as $row ) {
+            $idTheme = $row['idtheme'];
+        }
+        $result = $objPdo->query("insert into news(idtheme, titrenews, datenews, textenews, idredacteur) values ('intval($idTheme)', '$titre', '$date', '$texte', 'intval($redac)')");
         header("Location:../accueil.php");
     }
 }
@@ -18,46 +26,35 @@ if (isset($_POST["valider"])){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/addArticle.css">
-    <title>Ajouter un article</title>
+    <link rel="stylesheet" type="text/css" href="../css/styleArticle.css">
+    <title>Écrire un article</title>
 </head>
 <body>
-<div align="center">
-    <div id="champs" align="center">
-        <h2>Ajouter un article</h2>
 
-        <form method="post">
-            <table>
-                <tr>
-                    <td align="center">
-                        <input type="text" name="titre" placeholder="titre">
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <textarea id="contenu" placeholder="contenu de l'article"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <select name="theme" id="theme">
-                            <?php
-                            $result = $objPdo->query("select * from theme");
+<div class="container">
+    <div class="wrap">
+        <div class="headings">
+            <a id="sign-up"><span>Écrire un Article</span></a>
+        </div>
+        <div id="sign-in-form">
+            <form  method="post">
+                <label for="username">Titre</label>
+                <input id="username" type="text" name="titre" />
+                <label for="content">Contenu de l'article</label>
+                <textarea id="contenu" placeholder="contenu de l'article" name="texte"></textarea>
+                <label for="theme">Thème</label>
+                <select name="theme" id="theme">
+                    <?php
+                    $result = $objPdo->query("select * from theme");
 
-                            foreach ($result as $row ) {
-                                echo "<option>" . $row['description'] . "</option>";
-                            }
-                            ?>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center"><br/>
-                        <input type="submit" value="Valider" name="valider">
-                    </td>
-                </tr>
-            </table>
-        </form>
+                    foreach ($result as $row ) {
+                        echo "<option>" . $row['description'] . "</option>";
+                    }
+                    ?>
+                </select>
+                <input type="submit" class="button" name="valider" value="Valider"/>
+            </form>
+        </div>
     </div>
 </div>
 
