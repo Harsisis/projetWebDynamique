@@ -61,7 +61,10 @@ session_start();
 <br/>
 <p align="center">
     <?php
+    echo "Nous sommes le ".date("d/m/Y");
+
     if (isset($_SESSION['login']) || isset($_SESSION['password'])) {
+        echo " - ";
         echo "Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . " !";
     }
     ?>

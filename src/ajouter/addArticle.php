@@ -9,14 +9,14 @@ if (isset($_POST["valider"])){
     if ($_POST['titre'] != "" || $_POST['contenu'] != ""){
         $theme = $_POST['theme'];
         $titre = $_POST['titre'];
-        $date = date("Y-m-d");;
+        $date = date("Y-m-d");
         $texte = $_POST['texte'];
         $redac = $_SESSION['id'];
         $resTheme = $objPdo->query("select idtheme from theme where description = '$theme'");
         foreach ($resTheme as $row ) {
             $idTheme = $row['idtheme'];
         }
-        $result = $objPdo->query("insert into news(idtheme, titrenews, datenews, textenews, idredacteur) values ('intval($idTheme)', '$titre', '$date', '$texte', 'intval($redac)')");
+        $result = $objPdo->query("insert into news(idtheme, titrenews, datenews, textenews, idredacteur) values ('$idTheme', '$titre', '$date', '$texte', '$redac')");
         header("Location:../accueil.php");
     }
 }

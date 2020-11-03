@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="style for &#10;-seConnecter.php&#10;-creerCompte.php&#10;-addTheme.php&#10;-addArticle.php&#10;&#10;plus attempt to add article --&gt; failed">
+    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/accueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ajouter/addArticle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ajouter/addArticle.php" afterDir="false" />
@@ -121,7 +121,7 @@
       <workItem from="1603894519687" duration="5379000" />
       <workItem from="1604064352832" duration="4041000" />
       <workItem from="1604068905177" duration="3630000" />
-      <workItem from="1604387450235" duration="688000" />
+      <workItem from="1604387450235" duration="3427000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1603108019153</created>
@@ -221,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604072195598</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix">
+      <created>1604388305863</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1604388305863</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +262,8 @@
     <MESSAGE value="pop up sign out done, remains to check entries and add articles" />
     <MESSAGE value="try to get id from the db into the session so i can use it to create articles" />
     <MESSAGE value="style for &#10;-seConnecter.php&#10;-creerCompte.php&#10;-addTheme.php&#10;-addArticle.php&#10;&#10;plus attempt to add article --&gt; failed" />
-    <option name="LAST_COMMIT_MESSAGE" value="style for &#10;-seConnecter.php&#10;-creerCompte.php&#10;-addTheme.php&#10;-addArticle.php&#10;&#10;plus attempt to add article --&gt; failed" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="116" y="88" key="#CLI_Interpreters" timestamp="1603295581474">
@@ -297,26 +305,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="310" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603295806118" />
-    <state width="1877" height="103" key="GridCell.Tab.0.bottom" timestamp="1603294928354">
+    <state width="1293" height="275" key="GridCell.Tab.0.bottom" timestamp="1604390576697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="844" height="98" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603113558558" />
-    <state width="1877" height="103" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603294928354" />
-    <state width="1877" height="103" key="GridCell.Tab.0.center" timestamp="1603294928354">
+    <state width="1293" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604390576697" />
+    <state width="1293" height="275" key="GridCell.Tab.0.center" timestamp="1604390576697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="844" height="98" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603113558558" />
-    <state width="1877" height="103" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603294928354" />
-    <state width="1877" height="103" key="GridCell.Tab.0.left" timestamp="1603294928354">
+    <state width="1293" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604390576697" />
+    <state width="1293" height="275" key="GridCell.Tab.0.left" timestamp="1604390576697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="844" height="98" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603113558558" />
-    <state width="1877" height="103" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603294928354" />
-    <state width="1877" height="103" key="GridCell.Tab.0.right" timestamp="1603294928354">
+    <state width="1293" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604390576697" />
+    <state width="1293" height="275" key="GridCell.Tab.0.right" timestamp="1604390576697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="844" height="98" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603113558558" />
-    <state width="1877" height="103" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603294928354" />
+    <state width="1293" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604390576697" />
     <state width="1877" height="106" key="GridCell.Tab.1.bottom" timestamp="1603294179938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -387,15 +395,15 @@
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603111545176" />
     <state x="346" y="72" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603295170407" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1604072201037">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1604388309571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603524052318" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604072201037" />
-    <state x="1090" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604064503081">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604388309571" />
+    <state x="1090" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604388127203">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1090" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604064503081" />
+    <state x="1090" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604388127203" />
     <state x="785" y="422" key="com.jetbrains.plugins.webDeployment.ui.UploadBeforeRunTaskDialog" timestamp="1603295810357">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
