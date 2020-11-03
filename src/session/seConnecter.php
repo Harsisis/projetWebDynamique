@@ -2,27 +2,6 @@
 session_start();
 include("../database/connection.php");
 $objPdo = connect();
-    if (isset($_POST["valider"])){
-            if ($_POST['mail'] != '' && $_POST['mdp'] != '' && $_POST['mail'] != 'mail') {
-                $recordMail = $_POST['mail'];
-                $recordMdp = $_POST['mdp'];
-                $result = $objPdo->query("select * from redacteur where motdepasse = '$recordMdp' and adressemail = '$recordMail'");
-                foreach ($result as $row ) {
-                    echo $row['adressemail'];
-                    $_SESSION['nom'] = $row['nom'];
-                    $_SESSION['prenom'] = $row['prenom'];
-                    $_SESSION['id'] = $row['idredacteur'];
-                }
-                if ($result != null){
-                    $_SESSION['login'] = $recordMail;
-                    $_SESSION['password'] = $recordMdp;
-                    header("Location:../accueil.php");
-                }
-                else{
-                    header("Location:seConnecter.php");
-                }
-            }
-    }
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -45,10 +24,48 @@ $objPdo = connect();
                 <label for="password">Mot de passe</label>
                 <input id="password" type="password" name="mdp" />
                 <input type="submit" class="button" name="valider" value="Valider"/>
+                <div style="width: 100%; overflow: hidden;">
+                    <div style="width: 49%; float: left;">
+                        <input type="submit" name="create" value="Créer un compte"/>
+                    </div>
+                    <div style="margin-left: 51%;">
+                        <input type="submit" name="accueil" value="Accueil"/>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
 </div>
+
+<?php
+if (isset($_POST["valider"])){
+    if ($_POST['mail'] != '' && $_POST['mdp'] != '' && $_POST['mail'] != 'mail') {
+        $recordMail = $_POST['mail'];
+        $recordMdp = $_POST['mdp'];
+        $result = $objPdo->query("select * from redacteur where motdepasse = '$recordMdp' and adressemail = '$recordMail'");
+        foreach ($result as $row ) {
+            echo $row['adressemail'];
+            $_SESSION['nom'] = $row['nom'];
+            $_SESSION['prenom'] = $row['prenom'];
+            $_SESSION['id'] = $row['idredacteur'];
+        }
+        if ($result != null){
+            $_SESSION['login'] = $recordMail;
+            $_SESSION['password'] = $recordMdp;
+            header("Location:../accueil.php");
+        }
+        else{
+            header("Location:seConnecter.php");
+        }
+    }
+}
+else if (isset($_POST["create"])) {
+    header("location:creerCompte.php");
+}
+else if (isset($_POST["accueil"])) {
+    header("location:../accueil.php");
+}
+?>
 
 </body>
 </html>

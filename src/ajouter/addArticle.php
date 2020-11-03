@@ -20,6 +20,9 @@ if (isset($_POST["valider"])){
         header("Location:../accueil.php");
     }
 }
+else if (isset($_POST["accueil"])){
+    header("Location:../accueil.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -53,6 +56,7 @@ if (isset($_POST["valider"])){
                     ?>
                 </select>
                 <input type="submit" class="button" name="valider" value="Valider"/>
+                <input type="submit" name="accueil" value="Accueil"/>
             </form>
         </div>
     </div>
