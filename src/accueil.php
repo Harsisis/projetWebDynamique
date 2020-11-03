@@ -15,7 +15,7 @@ session_start();
 
 <header>
     <div class="row">
-        <h1>YuGo News ⚡</h1>
+        <h1>Gyoza News ⚡</h1>
     </div>
     <div class="row">
         <nav>
@@ -47,7 +47,7 @@ session_start();
                 }
                 else{
                     echo "<li>
-                    <a href=\"javascript:void(0);\" onclick='deco();'>Sign out</a> <!---->
+                    <a href=\"javascript:void(0);\" onclick='deco();'>Sign out</a>
                     <script type='text/javascript' src='popupDeco.js'></script>
                 </li>";
                 }

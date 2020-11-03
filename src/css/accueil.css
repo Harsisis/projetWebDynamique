@@ -2,7 +2,6 @@
 
 /*body*/
 body{
-    /*background: linear-gradient(90deg, #CFDBD5 0%, #E8EDDF 100%);*/
     font-family: "Montserrat", sans-serif;
     margin: 0;
 }
@@ -158,7 +157,6 @@ footer{
 
 h4{
     color: #CFDBD5;
-    font-size: smaller;
 }
 
 

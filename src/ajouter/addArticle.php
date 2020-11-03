@@ -6,7 +6,7 @@ $objPdo = connect();
 $objPdo->query('SET NAMES utf8');
 
 if (isset($_POST["valider"])){
-    if ($_POST['titre'] != "" || $_POST['contenu'] != ""){// check if already exist
+    if ($_POST['titre'] != "" || $_POST['contenu'] != ""){
         $theme = $_POST['theme'];
         $titre = $_POST['titre'];
         $date = date("Y-m-d");;
