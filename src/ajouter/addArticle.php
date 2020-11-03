@@ -23,7 +23,7 @@ if (isset($_POST["valider"])){
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/styleArticle.css">
