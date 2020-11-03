@@ -92,6 +92,7 @@ session_start();
             <form method="post">
                 <input class="submitB" type="submit" name="theme" value="Thème">
                 <input class="submitB" type="submit" name="date" value="Date">
+                <input class="submitB" type="submit" name="dateTheme" value="Date et Thème">
             </form>
         </td>
     </tr>
@@ -105,6 +106,9 @@ session_start();
     }
     elseif (isset($_POST["theme"])){
         $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by theme.description");
+    }
+    elseif (isset($_POST["dateTheme"])){
+        $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by theme.description, datenews desc");
     }
     else{
         $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by datenews desc");

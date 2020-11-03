@@ -9,7 +9,7 @@ if (isset($_POST["valider"])){
     if ($_POST['titre'] != "" || $_POST['contenu'] != ""){
         $theme = $_POST['theme'];
         $titre = $_POST['titre'];
-        $date = date("Y-m-d");
+        $date = date("Y-m-d H:i:s");
         $texte = $_POST['texte'];
         $redac = $_SESSION['id'];
         $resTheme = $objPdo->query("select idtheme from theme where description = '$theme'");
