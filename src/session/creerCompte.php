@@ -51,7 +51,7 @@ if (isset($_POST["valider"])){
 
         $select = $objPdo->query("select * from redacteur where adressemail = '$mail'");
         if ($select->rowCount() > 0){
-            echo "erreur mail déjà utilisé";
+            echo "<script>alert('Désolé, mais ce mail est déjà utilisé');</script>";
         } else {
             $result = $objPdo->query("insert into redacteur(nom, prenom, adressemail, motdepasse) values ('$nom', '$prenom', '$mail', '$mdp')");
             $result = $objPdo->query("select * from redacteur where adressemail = '$mail' and motdepasse = '$mdp'");

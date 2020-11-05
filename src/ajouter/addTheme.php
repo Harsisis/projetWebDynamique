@@ -7,7 +7,7 @@ if (isset($_POST["valider"])){
 
         $select = $objPdo->query("select * from theme where description = '$theme'");
         if ($select->rowCount() > 0){
-            echo "erreur thème déjà créé";
+            echo "<script>alert('Le thème saisi fait déjà parti de la base de données');</script>";
         } else {
             $result = $objPdo->query("insert into theme(description) values ('$theme')");
             header("Location:../accueil.php");

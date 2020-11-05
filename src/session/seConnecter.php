@@ -55,7 +55,7 @@ if (isset($_POST["valider"])){
             $_SESSION['password'] = $recordMdp;
             header("Location:../accueil.php");
         } else {
-            echo "utilisateur inexistant";
+            echo "<script>alert('L\'utilisateur saisi n\'existe pas ');</script>";
         }
     }
 }
