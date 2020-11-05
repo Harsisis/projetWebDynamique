@@ -21,7 +21,7 @@ session_start();
         <nav>
             <ul>
                 <?php
-                if (isset($_SESSION['login']) || isset($_SESSION['password'])) {
+                if (isset($_SESSION['login']) && isset($_SESSION['password'])) {
                     echo "<li>
                             <a class=\"menuB\" href=\"ajouter/addArticle.php\">écrire un article</a>
                             </li>

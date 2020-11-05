@@ -22,11 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="buttons on every single page">
+    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="its done, now lets add features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ajouter/addTheme.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ajouter/addTheme.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session/creerCompte.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/creerCompte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/session/seConnecter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/seConnecter.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +121,8 @@
       <workItem from="1604068905177" duration="3630000" />
       <workItem from="1604387450235" duration="9777000" />
       <workItem from="1604405162737" duration="4262000" />
-      <workItem from="1604604354168" duration="3566000" />
+      <workItem from="1604604354168" duration="4099000" />
+      <workItem from="1604610009957" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1603108019153</created>
@@ -266,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604408537572</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="its done, now lets add features">
+      <created>1604608913051</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1604608913051</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +311,8 @@
     <MESSAGE value="remove test files" />
     <MESSAGE value="change language from english to french" />
     <MESSAGE value="buttons on every single page" />
-    <option name="LAST_COMMIT_MESSAGE" value="buttons on every single page" />
+    <MESSAGE value="its done, now lets add features" />
+    <option name="LAST_COMMIT_MESSAGE" value="its done, now lets add features" />
   </component>
   <component name="WindowStateProjectService">
     <state x="116" y="88" key="#CLI_Interpreters" timestamp="1603295581474">
@@ -438,11 +444,11 @@
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603111545176" />
     <state x="346" y="72" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603295170407" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1604408541318">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1604608920906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603524052318" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604408541318" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604608920906" />
     <state x="1090" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604388127203">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
