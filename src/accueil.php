@@ -1,6 +1,7 @@
 <?php
 include("database/connection.php");
-
+$objPdo = connect();
+$objPdo->query('SET NAMES utf8');
 session_start();
 ?>
 
@@ -97,9 +98,6 @@ session_start();
         </td>
     </tr>
     <?php
-    $objPdo = connect();
-
-    $objPdo->query('SET NAMES utf8');
 
     if (isset($_POST["date"])){
         $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by datenews desc");
