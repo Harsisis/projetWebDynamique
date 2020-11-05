@@ -44,17 +44,26 @@ $objPdo = connect();
 <?php
 if (isset($_POST["valider"])){
     if ($_POST['mail'] != '' && $_POST['mdp'] != '' && $_POST['nom'] != '' && $_POST['prenom'] != '') {
-        $nom = $_SESSION['nom'] = strtoupper($_POST['nom']);
-        $prenom =$_SESSION['prenom'] = $_POST['prenom'];
-        $mail = $_SESSION['login'] = $_POST['mail'];
-        $mdp = $_SESSION['password'] = $_POST['mdp'];
+        $nom = strtoupper($_POST['nom']);
+        $prenom = $_POST['prenom'];
+        $mail = $_POST['mail'];
+        $mdp = $_POST['mdp'];
 
-        $result = $objPdo->query("insert into redacteur(nom, prenom, adressemail, motdepasse) values ('$nom', '$prenom', '$mail', '$mdp')");
-        $result = $objPdo->query("select * from redacteur where adressemail = '$mail' and motdepasse = '$mdp'");
-        foreach ($result as $row ) {
-            $_SESSION['id'] = $row['idredacteur'];
+        $select = $objPdo->query("select * from redacteur where adressemail = '$mail'");
+        if ($select->rowCount() > 0){
+            echo "erreur mail déjà utilisé";
+        } else {
+            $result = $objPdo->query("insert into redacteur(nom, prenom, adressemail, motdepasse) values ('$nom', '$prenom', '$mail', '$mdp')");
+            $result = $objPdo->query("select * from redacteur where adressemail = '$mail' and motdepasse = '$mdp'");
+            foreach ($result as $row ) {
+                $_SESSION['id'] = $row['idredacteur'];
+            }
+            $_SESSION['password'] = $mdp;
+            $_SESSION['login'] = $mail;
+            $_SESSION['prenom'] = $prenom;
+            $_SESSION['nom'] = $nom;
+            header("Location:../accueil.php");
         }
-        header("Location:../accueil.php");
     }
 }
 else if (isset($_POST["connect"])){

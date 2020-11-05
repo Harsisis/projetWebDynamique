@@ -20,9 +20,9 @@ $objPdo = connect();
         <div id="sign-in-form">
             <form  method="post">
                 <label for="username">Mail</label>
-                <input id="username" type="text" name="mail" />
+                <input id="username" type="text" name="mail"/>
                 <label for="password">Mot de passe</label>
-                <input id="password" type="password" name="mdp" />
+                <input id="password" type="password" name="mdp"/>
                 <input type="submit" class="button" name="valider" value="Valider"/>
                 <div style="width: 100%; overflow: hidden;">
                     <div style="width: 49%; float: left;">
@@ -42,20 +42,20 @@ if (isset($_POST["valider"])){
     if ($_POST['mail'] != '' && $_POST['mdp'] != '' && $_POST['mail'] != 'mail') {
         $recordMail = $_POST['mail'];
         $recordMdp = $_POST['mdp'];
-        $result = $objPdo->query("select * from redacteur where motdepasse = '$recordMdp' and adressemail = '$recordMail'");
-        foreach ($result as $row ) {
-            echo $row['adressemail'];
-            $_SESSION['nom'] = $row['nom'];
-            $_SESSION['prenom'] = $row['prenom'];
-            $_SESSION['id'] = $row['idredacteur'];
-        }
-        if ($result != null){
+
+        $select = $objPdo->query("select * from redacteur where motdepasse = '$recordMdp' and adressemail = '$recordMail'");
+        if ($select->rowCount() > 0){
+            foreach ($select as $row ) {
+                $_SESSION['id'] = $row['idredacteur'];
+                $_SESSION['nom'] = $row['nom'];
+                $_SESSION['prenom'] = $row['prenom'];
+                $_SESSION['id'] = $row['idredacteur'];
+            }
             $_SESSION['login'] = $recordMail;
             $_SESSION['password'] = $recordMdp;
             header("Location:../accueil.php");
-        }
-        else{
-            header("Location:seConnecter.php");
+        } else {
+            echo "utilisateur inexistant";
         }
     }
 }
