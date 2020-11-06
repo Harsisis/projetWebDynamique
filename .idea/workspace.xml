@@ -22,9 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="i give a try on css auto generated html with php, dont i really dont know why it doesn't appear">
+    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="php fuck yeah">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/accueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/accueil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/session/creerCompte.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/session/creerCompte.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +127,7 @@
       <workItem from="1604405162737" duration="4262000" />
       <workItem from="1604604354168" duration="4099000" />
       <workItem from="1604610009957" duration="6489000" />
-      <workItem from="1604673917261" duration="14982000" />
+      <workItem from="1604673917261" duration="16213000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1603108019153</created>
@@ -330,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604699263990</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="php fuck yeah">
+      <created>1604701305515</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1604701305515</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +359,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="order by theme and date" />
     <MESSAGE value="a lot of changes, css for seConnecter and i know how to check if the user exist" />
     <MESSAGE value="we can connect, and disconnect but we need to to check if the user is ok" />
     <MESSAGE value="managed files" />
@@ -375,7 +383,8 @@
     <MESSAGE value="search input is nearly done, remains a problem with my sql query thats display every article found with each theme" />
     <MESSAGE value="search is done, but theme is missing in the search" />
     <MESSAGE value="i give a try on css auto generated html with php, dont i really dont know why it doesn't appear" />
-    <option name="LAST_COMMIT_MESSAGE" value="i give a try on css auto generated html with php, dont i really dont know why it doesn't appear" />
+    <MESSAGE value="php fuck yeah" />
+    <option name="LAST_COMMIT_MESSAGE" value="php fuck yeah" />
   </component>
   <component name="WindowStateProjectService">
     <state x="116" y="88" key="#CLI_Interpreters" timestamp="1603295581474">
@@ -515,11 +524,11 @@
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603111545176" />
     <state x="346" y="72" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603295170407" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1604699270147">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1469" y="183" key="Vcs.Push.Dialog.v2" timestamp="1604701314323">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603524052318" />
-    <state x="-1469" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604610617535" />
+    <state x="-1469" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604701314323" />
     <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604699270147" />
     <state x="1090" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604618161118">
       <screen x="0" y="0" width="1920" height="1040" />

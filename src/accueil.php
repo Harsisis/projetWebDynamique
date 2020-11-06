@@ -144,8 +144,7 @@ session_start();
 <br/>
 <!--footer-->
 <footer>
-    <br/>
-    <h4>&copy; 2020, HOUVER SING Irma & CADET Gauthier</h4>
+    <h5>&copy; 2020, HOUVER SING Irma & CADET Gauthier</h5>
 </footer>
 </body>
 </html>
