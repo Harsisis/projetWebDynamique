@@ -29,7 +29,7 @@ nav li {
 nav ul li a {
     display:inline-block;
     width:200px;
-    color: #F6F8F2;
+    color: #f6f8f2;
     text-decoration:none;
     text-align:center;
     padding:10px;
@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li a.menuB:hover {
-    color:#F5CB5C;
+    color: #f5cb5c;
     border-bottom: #F5CB5C 2px solid;
     padding-top:5px;
 }
@@ -135,12 +135,24 @@ input{
 
 table{
     width: 80%;
+    border-spacing: 0 45px;
 }
 
 .article{
-    border-left: #212120 2px solid;
     margin-top: 30px;
+    background: linear-gradient(90deg, #212120 0%, #333533 100%);
 }
+.article td{
+    padding-left: 20px;
+    padding-right: 60px;
+    border-left: #f5cb5c 8px solid;
+    color: #CFDBD5;
+}
+.article td h3{
+    background-color: #f5cb5c;
+    color: #242423;
+}
+
 
 .date{
     font-size: 12px;
