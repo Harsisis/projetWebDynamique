@@ -137,15 +137,13 @@ table{
     width: 80%;
 }
 
-.separator{
-    content: "";
+.article{
+    border-left: #212120 2px solid;
+    margin-top: 30px;
 }
 
-td p.date{
-    font-size: smaller;
-}
-
-.searchT{
+.date{
+    font-size: 12px;
 }
 
 /*footer*/
@@ -161,5 +159,3 @@ footer{
 h4{
     color: #CFDBD5;
 }
-
-

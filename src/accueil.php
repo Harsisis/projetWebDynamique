@@ -100,8 +100,8 @@ session_start();
             </form>
         </td>
     </tr>
-    <?php
 
+    <?php
     if (isset($_POST["date"])){
         $res = "select * from news, theme where news.idtheme = theme.idtheme order by datenews desc";
     }
@@ -114,7 +114,7 @@ session_start();
     else if (isset($_POST['search'])){
         if ($_POST["txtSearch"] != ""){
             $txt = $_POST["txtSearch"];
-            $res = "select distinct * from news, theme where titrenews like '%" . $txt . "%' 
+            $res = "select distinct * from news, theme where titrenews like '%" . $txt . "%'
                             or textenews like '%" . $txt . "%'
                             or description like '%" . $txt . "%'
                             and news.idtheme = theme.idtheme order by theme.description, datenews desc";
@@ -131,29 +131,20 @@ session_start();
     $result = $objPdo->query($res);
 
     foreach ($result as $row ) {
-        echo "<tr>
-                    <td>
-                        <h3>⪧ " . $row ['titrenews'] . "</h3>
-                    </td>
-                </tr>";
-
-        echo "<tr>
-                    <td>
-                        <p class='date'>" . $row ['datenews'] . " - " . $row['description'] . "</p>
-                        <p>" . $row ['textenews'] . "</p>
-                    </td>
-                </tr>";
-
-
-        echo "<tr class=\"separator\"></tr>";
+        echo "<tr class=\"article\">
+                <td>
+                    <h3>⪧ " . $row ['titrenews'] . "</h3>
+                    <p class=\"date\">" . $row ['datenews'] . " - " . $row['description'] . "</p>
+                    <p>" . $row ['textenews'] . "</p>
+                </td>
+              </tr>";
     }
     ?>
 </table>
-
 <br/>
 <!--footer-->
 <footer>
-    </br>
+    <br/>
     <h4>&copy; 2020, HOUVER SING Irma & CADET Gauthier</h4>
 </footer>
 </body>
