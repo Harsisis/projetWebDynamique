@@ -121,13 +121,6 @@ input{
     font-family: "Montserrat", sans-serif;
 }
 
-.search{
-    border: none;
-    width: 180px;
-    height: 40px;
-    font-family: "Montserrat", sans-serif;
-}
-
 .submitB {
     color: #F6F8F2;
     background: linear-gradient(90deg, #212120 0%, #333533 100%);
@@ -150,6 +143,9 @@ table{
 
 td p.date{
     font-size: smaller;
+}
+
+.searchT{
 }
 
 /*footer*/

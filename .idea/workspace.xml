@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="change place for connect() fonction">
+    <list default="true" id="396f4315-691b-4dd5-a357-8a44f3a73495" name="Default Changelist" comment="try to had search text input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/accueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/accueil.css" afterDir="false" />
@@ -125,7 +125,7 @@
       <workItem from="1604405162737" duration="4262000" />
       <workItem from="1604604354168" duration="4099000" />
       <workItem from="1604610009957" duration="6489000" />
-      <workItem from="1604673917261" duration="1101000" />
+      <workItem from="1604673917261" duration="4240000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <created>1603108019153</created>
@@ -295,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604618141510</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="try to had search text input">
+      <created>1604675048579</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1604675048579</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +346,8 @@
     <MESSAGE value="change || to &amp;&amp;" />
     <MESSAGE value="popup if the entries arent correct" />
     <MESSAGE value="change place for connect() fonction" />
-    <option name="LAST_COMMIT_MESSAGE" value="change place for connect() fonction" />
+    <MESSAGE value="try to had search text input" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to had search text input" />
   </component>
   <component name="WindowStateProjectService">
     <state x="116" y="88" key="#CLI_Interpreters" timestamp="1603295581474">
@@ -471,12 +479,12 @@
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603111545176" />
     <state x="346" y="72" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603295170407" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1604618149025">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1604675053517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603524052318" />
     <state x="-1469" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604610617535" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604618149025" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1604675053517" />
     <state x="1090" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604618161118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

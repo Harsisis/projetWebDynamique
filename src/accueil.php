@@ -94,31 +94,37 @@ session_start();
                 <input class="submitB" type="submit" name="theme" value="Thème">
                 <input class="submitB" type="submit" name="date" value="Date">
                 <input class="submitB" type="submit" name="dateTheme" value="Date et Thème">
-            </form>
-        </td>
-    </tr>
-    <tr align="center">
-        <td>
-            <form method="post">
-                <input class="search" type="text" name="txtsearch" placeholder="Ex : Jeux Vidéos">
-                <input class="submitB" type="submit" name="search" value="Rechercher">
+                <br/> <br/>
+                <input type="text" name="txtSearch" placeholder="Ex : Jeux Vidéos" style="background: transparent; width: 150px; height: 30px;">
+                <input type="submit" name="search" value="Rechercher" style="color: #F6F8F2; background: linear-gradient(90deg, #212120 0%, #333533 100%); border: none; width: 150px; height: 35px;">
             </form>
         </td>
     </tr>
     <?php
 
     if (isset($_POST["date"])){
-        $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by datenews desc");
+        $res = "select * from news, theme where news.idtheme = theme.idtheme order by datenews desc";
     }
     elseif (isset($_POST["theme"])){
-        $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by theme.description");
+        $res = "select * from news, theme where news.idtheme = theme.idtheme order by theme.description";
     }
     elseif (isset($_POST["dateTheme"])){
-        $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by theme.description, datenews desc");
+        $res = "select * from news, theme where news.idtheme = theme.idtheme order by theme.description, datenews desc";
+    }
+    else if (isset($_POST['search'])){
+        if ($_POST["txtSearch"] != ""){
+            $txt = $_POST["txtSearch"];
+            $res = "select distinct * from news, theme where titrenews like '%" . $txt . "%' 
+                            or textenews like '%" . $txt . "%'
+                            or description like '%" . $txt . "%'
+                            and news.idtheme = theme.idtheme order by theme.description, datenews desc";
+        }
     }
     else{
-        $result = $objPdo->query("select * from news, theme where news.idtheme = theme.idtheme order by datenews desc");
+        $res = "select * from news, theme where news.idtheme = theme.idtheme order by datenews desc";
     }
+
+    $result = $objPdo->query($res);
 
     foreach ($result as $row ) {
         echo "<tr>
