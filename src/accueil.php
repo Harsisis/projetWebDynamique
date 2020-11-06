@@ -114,8 +114,14 @@ session_start();
     else if (isset($_POST['search'])){
         if ($_POST["txtSearch"] != ""){
             $txt = $_POST["txtSearch"];
-            $res = "select distinct * from news where titrenews like '%" . $txt . "%' or textenews like '%" . $txt . "%'
-                        order by datenews desc";
+            $res = "select distinct * from news, theme where titrenews like '%" . $txt . "%' 
+                            or textenews like '%" . $txt . "%'
+                            or description like '%" . $txt . "%'
+                            and news.idtheme = theme.idtheme order by theme.description, datenews desc";
+
+//            $res = "select distinct * from news where titrenews like '%" . $txt . "%' or textenews like '%" . $txt . "%'
+//                            order by datenews desc";
+//            work but theme is missing --> errors finding row description
         }
     }
     else{
