@@ -97,6 +97,14 @@ session_start();
             </form>
         </td>
     </tr>
+    <tr align="center">
+        <td>
+            <form method="post">
+                <input class="search" type="text" name="txtsearch" placeholder="Ex : Jeux Vidéos">
+                <input class="submitB" type="submit" name="search" value="Rechercher">
+            </form>
+        </td>
+    </tr>
     <?php
 
     if (isset($_POST["date"])){
@@ -115,7 +123,7 @@ session_start();
     foreach ($result as $row ) {
         echo "<tr>
                     <td>
-                        <h3>" . $row ['titrenews'] . "</h3>
+                        <h3>⪧ " . $row ['titrenews'] . "</h3>
                     </td>
                 </tr>";
 
