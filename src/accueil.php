@@ -77,8 +77,8 @@ session_start();
 <div id="slideshow">
     <div class="slide-wrapper">
         <div class="slide"><h2 class="slide-title">Cadet Gauthier</h2></div>
-        <div class="slide"><h1 class="slide-title">Houver Sing Irma</h1></div>
-        <div class="slide"><h1 class="slide-title">Projet PHP</h1></div>
+        <div class="slide"><h2 class="slide-title">Houver Sing Irma</h2></div>
+        <div class="slide"><h2 class="slide-title">Projet PHP</h2></div>
     </div>
 </div>
 <br/>
@@ -106,25 +106,39 @@ session_start();
 
     <?php
     if (isset($_POST["date"])){
-        $res = "select * from news, theme where news.idtheme = theme.idtheme order by datenews desc";
+        $res = "select * from news, theme, redacteur 
+                    where news.idtheme = theme.idtheme 
+                    and news.idredacteur = redacteur.idredacteur 
+                    order by datenews desc";
     }
     elseif (isset($_POST["theme"])){
-        $res = "select * from news, theme where news.idtheme = theme.idtheme order by theme.description";
+        $res = "select * from news, theme, redacteur 
+                    where news.idtheme = theme.idtheme 
+                    and news.idredacteur = redacteur.idredacteur 
+                    order by theme.description";
     }
     elseif (isset($_POST["dateTheme"])){
-        $res = "select * from news, theme where news.idtheme = theme.idtheme order by theme.description, datenews desc";
+        $res = "select * from news, theme, redacteur 
+                    where news.idtheme = theme.idtheme 
+                    and news.idredacteur = redacteur.idredacteur 
+                    order by theme.description, datenews desc";
     }
     else if (isset($_POST['search'])){
         if ($_POST["txtSearch"] != ""){
             $txt = $_POST["txtSearch"];
-            $res = "select distinct * from news, theme where (titrenews like '%" . $txt . "%'
+            $res = "select distinct * from news, theme, redacteur where (titrenews like '%" . $txt . "%'
                             or textenews like '%" . $txt . "%'
                             or description like '%" . $txt . "%')
-                            and news.idtheme = theme.idtheme order by theme.description, datenews desc";
+                            and news.idtheme = theme.idtheme 
+                            and news.idredacteur = redacteur.idredacteur
+                            order by theme.description, datenews desc";
         }
     }
     else{
-        $res = "select * from news, theme where news.idtheme = theme.idtheme order by datenews desc";
+        $res = "select * from news, theme, redacteur 
+                    where news.idtheme = theme.idtheme 
+                    and news.idredacteur = redacteur.idredacteur 
+                    order by datenews desc";
     }
 
     $result = $objPdo->query($res);
@@ -134,6 +148,7 @@ session_start();
                 <td>
                     <h3>⪧ " . $row ['titrenews'] . "</h3>
                     <p class=\"date\">" . $row ['datenews'] . " - " . $row['description'] . "</p>
+                    <p class=\"date\">" . $row ['nom'] . " " . $row['prenom'] . "</p>
                     <p>" . $row ['textenews'] . "</p>
                 </td>
               </tr>";

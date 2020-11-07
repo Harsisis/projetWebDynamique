@@ -113,6 +113,7 @@ session_start();
                 <td>
                     <h3>⪧ " . $row ['titrenews'] . "</h3>
                     <p class=\"date\">" . $row ['datenews'] . " - " . $row['description'] . "</p>
+                    <p class=\"date\">" . $row ['nom'] . " " . $row['prenom'] . "</p>
                     <p>" . $row ['textenews'] . "</p>
                 </td>
               </tr>";
