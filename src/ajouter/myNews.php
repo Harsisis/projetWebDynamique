@@ -1,5 +1,5 @@
 <?php
-include("database/connection.php");
+include("../database/connection.php");
 $objPdo = connect();
 $objPdo->query('SET NAMES utf8');
 session_start();
@@ -9,8 +9,8 @@ session_start();
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/accueil.css">
-    <title>Accueil</title>
+    <link rel="stylesheet" type="text/css" href="../css/accueil.css">
+    <title>Mes articles</title>
 </head>
 <body>
 
@@ -24,13 +24,13 @@ session_start();
                 <?php
                 if (isset($_SESSION['login']) && isset($_SESSION['password'])) {
                     echo "<li>
-                            <a class=\"menuB\" href=\"ajouter/addArticle.php\">écrire un article</a>
+                            <a class=\"menuB\" href=\"../accueil.php\">accueil</a>
                             </li>
                             <li>
-                            <a class=\"menuB\" href=\"ajouter/myNews.php\">mes articles</a>
+                            <a class=\"menuB\" href=\"addArticle.php\">écrire un article</a>
                             </li>
                             <li>
-                            <a class=\"menuB\" href=\"ajouter/addTheme.php\">ajouter un thème</a>
+                            <a class=\"menuB\" href=\"addTheme.php\">ajouter un thème</a>
                             </li>";
                 }
                 ?>
@@ -49,12 +49,6 @@ session_start();
                     <a href=\"session/creerCompte.php\">Sign up</a>
                 </li>";
                 }
-                else{
-                    echo "<li>
-                    <a href=\"javascript:void(0);\" onclick='deco();'>Sign out</a>
-                    <script type='text/javascript' src='popupDeco.js'></script>
-                </li>";
-                }
                 ?>
             </ul>
         </nav>
@@ -62,42 +56,19 @@ session_start();
 
 </header>
 
-<br/>
-<p align="center">
-    <?php
-    echo "Nous sommes le ".date("d/m/Y");
-
-    if (isset($_SESSION['login']) || isset($_SESSION['password'])) {
-        echo " - ";
-        echo "Bienvenue " . $_SESSION['prenom'] . " " . $_SESSION['nom'] . " !";
-    }
-    ?>
-</p>
-<!--slideshow to see the latest news-->
-<div id="slideshow">
-    <div class="slide-wrapper">
-        <div class="slide"><h2 class="slide-title">Cadet Gauthier</h2></div>
-        <div class="slide"><h1 class="slide-title">Houver Sing Irma</h1></div>
-        <div class="slide"><h1 class="slide-title">Projet PHP</h1></div>
-    </div>
-</div>
-<br/>
-
 <!-- the latest news need to be in a table sorted by date-->
 
 <table align="center">
     <thead align="center">
     <td>
-        <h2>Les articles du plus récent au plus ancien</h2>
+        <h2>Rechercher parmis vos articles</h2>
     </td>
     </thead>
     <tr align="center">
         <td>
             <form method="post">
-                <input class="submitB" type="submit" name="theme" value="Thème">
-                <input class="submitB" type="submit" name="date" value="Date">
-                <input class="submitB" type="submit" name="dateTheme" value="Date et Thème">
-                <br/> <br/>
+                <input class="submitB" type="submit" name="all" value="Afficher tout">
+                <br/><br/>
                 <input type="text" name="txtSearch" placeholder="Ex : Jeux Vidéos" style="background: transparent; width: 150px; height: 30px;">
                 <input type="submit" name="search" value="Rechercher" style="color: #F6F8F2; background: linear-gradient(90deg, #212120 0%, #333533 100%); border: none; width: 150px; height: 35px;">
             </form>
@@ -105,26 +76,34 @@ session_start();
     </tr>
 
     <?php
-    if (isset($_POST["date"])){
-        $res = "select * from news, theme where news.idtheme = theme.idtheme order by datenews desc";
-    }
-    elseif (isset($_POST["theme"])){
-        $res = "select * from news, theme where news.idtheme = theme.idtheme order by theme.description";
-    }
-    elseif (isset($_POST["dateTheme"])){
-        $res = "select * from news, theme where news.idtheme = theme.idtheme order by theme.description, datenews desc";
+    $idRed = $_SESSION['id'];
+    $res = "";
+    if (isset($_POST['all'])){
+        $res = "select * from news, theme, redacteur 
+                    where news.idtheme = theme.idtheme 
+                    and news.idredacteur = redacteur.idredacteur 
+                    and redacteur.idredacteur = " . $idRed . " 
+                    order by datenews desc";
     }
     else if (isset($_POST['search'])){
         if ($_POST["txtSearch"] != ""){
             $txt = $_POST["txtSearch"];
-            $res = "select distinct * from news, theme where (titrenews like '%" . $txt . "%'
+            $res = "select distinct * from news, theme, redacteur 
+                            where (titrenews like '%" . $txt . "%'
                             or textenews like '%" . $txt . "%'
                             or description like '%" . $txt . "%')
-                            and news.idtheme = theme.idtheme order by theme.description, datenews desc";
+                            and news.idtheme = theme.idtheme 
+                            and news.idredacteur = redacteur.idredacteur 
+                            and redacteur.idredacteur = " . $idRed . "
+                            order by theme.description, datenews desc";
         }
     }
     else{
-        $res = "select * from news, theme where news.idtheme = theme.idtheme order by datenews desc";
+        $res = "select * from news, theme, redacteur 
+                    where news.idtheme = theme.idtheme 
+                    and news.idredacteur = redacteur.idredacteur 
+                    and redacteur.idredacteur = " . $idRed . " 
+                    order by datenews desc";
     }
 
     $result = $objPdo->query($res);
